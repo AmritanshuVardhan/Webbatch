@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img{
+            float: left;
+        }
+        .card{
+            border: 2px solid blue;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://imgs.search.brave.com/qTPDt27tN9yM0rqGlhjUPuOeN7l1kPyIeoWBScpLOMU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/cGVyc29uLXdyaXRp/bmctaW4tbm90ZWJv/b2stYmVzaWRlLWxh/cHRvcC13b3JraW5n/LWZyb20tYmVkLmpw/Zz93aWR0aD0xMDAw/JmZvcm1hdD1wanBn/JmV4aWY9MCZpcHRj/PTA" alt="" width="200" height="200">
+        <div class="card">Card1
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, totam eligendi, tenetur mollitia ea debitis quae adipisci blanditiis magnam illo vitae eum magni quisquam, sapiente provident tempora. Obcaecati, animi at.
+        </div>
+        <div class="card">Card2
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam maiores cupiditate consequatur voluptatem suscipit natus accusamus ullam error hic dolorem cumque molestias amet, tempore magni totam eligendi aliquid dolorum eum! Corporis voluptatem odio tempora error assumenda minus, ipsum voluptas esse eos laudantium reiciendis harum eaque! Ullam dolorum facere, minus ea recusandae ipsam modi eligendi ipsa, corporis vitae quo, rem doloribus. Officiis sed voluptatem amet consectetur nihil dolorum maxime, repellat numquam cupiditate corrupti quo, consequatur similique reiciendis voluptas accusantium iste, in tenetur! Necessitatibus, ratione! Placeat reiciendis officia beatae ad illum quis omnis repudiandae neque at? Velit qui aut saepe consequuntur esse, explicabo aliquam perferendis delectus deserunt nam sit sint ab nostrum magni enim, eveniet laborum minus accusantium dolorem, voluptas architecto veritatis. Debitis, sit commodi.
+        </div>
+        <div class="card">Card3</div>
+    </div>
+</body>
+</html>
