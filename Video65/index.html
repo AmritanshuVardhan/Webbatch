@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Program to calculate foctorial of a number using reduce and using for loops -->
+     <script>
+        let n = 6;
+        let fac = 1;
+        function fact(num){
+            for (let index = 1; index <= num; index++) {
+                
+                fac = fac * index
+            }
+            return fac
+        }
+        console.log(fact(n))
+    
+
+        function factorial(number){
+            let arr = Array.from(Array(number+1).keys())
+            let c = arr.slice(1,).reduce((a,b)=> a*b)
+            return c
+        }
+        console.log(factorial (n))
+        </script>
+</body>
+</html>
