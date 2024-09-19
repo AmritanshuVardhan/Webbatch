@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Gyan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Guru
+            </div>
+
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+                <a href="#">Features</a>
+                <a href="#">Contact</a>
+
+                <img src="menu.png" hidden id="togle" alt="">
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="left">
+                <h1>Welcome to Our Astro Gyaan</h1>
+                <p>
+                    Astrology is the study of the influence that distant cosmic objects, usually stars and planets, have
+                    on human lives.
+                </p>
+
+                <button>Join us</button>
+                <br>
+                <img src="icon.png" alt="" width="100">
+            </div>
+            <div class="right">
+                <img src="img1.png" alt="">
+            </div>
+        </div>
+
+
+
+
+
+        <div class="wave"></div>
+
+        <div id="sidenav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </header>
+
+    <script>
+        var menu = document.getElementById('togle');
+        var sidenav = document.getElementById('sidenav');
+        sidenav.style.width = "0px";
+        menu.onclick = function(){
+            if (sidenav.style.width == "0px"){
+                sidenav.style.width = "100%";
+            }
+            else {
+                sidenav.style.width = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
